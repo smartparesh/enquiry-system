@@ -1,0 +1,131 @@
+.ai-assistant-card {
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.05);
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #1e40af;
+}
+
+.ai-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.ai-icon {
+  color: #3b82f6;
+  fill: #bfdbfe;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ai-insight-box {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.ai-insight-box.full-width {
+  margin-top: 16px;
+}
+
+.ai-insight-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ai-insight-header h4 {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.text-blue { color: #3b82f6; }
+.text-purple { color: #a855f7; }
+.text-orange { color: #f97316; }
+
+.ai-prob-bar {
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.ai-prob-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1s ease-in-out;
+}
+
+.ai-prob-text {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.ai-text {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #334155;
+}
+
+.summary-text {
+  line-height: 1.5;
+}
+
+.ai-message-preview {
+  background-color: #f8fafc;
+  border-left: 3px solid #a855f7;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #334155;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.ai-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 150px;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.ai-pulse-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
