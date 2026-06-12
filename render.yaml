@@ -2,6 +2,7 @@ services:
   - type: web
     name: enquiry-management
     env: node
+    plan: free
     region: oregon
     buildCommand: "npm install && npm run build && cd backend && npm install"
     startCommand: "cd backend && node server.js"
